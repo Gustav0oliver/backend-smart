@@ -18,7 +18,7 @@ const PORT = process.env.PORT || 5000;
 // Esta configuração permite que o seu site no Render (quando a variável de ambiente estiver definida)
 // OU o seu ambiente local (http://localhost:3000) façam pedidos.
 const corsOptions = {
-    origin: process.env.CORS_ORIGIN || 'http://localhost:3000',
+    origin: 'https://smartfridge-backend-kmpr.onrender.com',
     optionsSuccessStatus: 200
 };
 app.use(cors(corsOptions));
@@ -45,3 +45,4 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Servidor rodando na porta ${PORT}`);
 });
+
